@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Suragani Geetha</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Suragani Geetha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- <img src="image.jpg" alt="Suragani Geetha profile picture" /> -->
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Suragani Geetha</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('geetha-resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor's Degree in Computer Science<br />Masters Degree in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a web developer, I see each new project as an opportunity to learn, grow, and contribute positively to the digital landscape. I'm excited about what the future holds for web development, and I'm determined to be at the forefront of innovation, helping to shape the way people interact with technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Education</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="njit.png"
+                alt="njit image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Master's Degree in Computer Science</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                2015
+              </button>
+              <p>TO</p>
+              <button
+                class="btn btn-color-2 project-btn" 
+              >
+                2016
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="svscm.png"
+                alt="svscm image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bachelors Degree in Computer Science</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                2012
+              </button>
+              <p>TO</p>
+              <button
+                class="btn btn-color-2 project-btn" 
+              >
+                2015
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="vishwasai.png"
+                alt="vishawasai image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">High School Diploma</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                2011
+              </button>
+              <p>TO</p>
+              <button
+                class="btn btn-color-2 project-btn" 
+              >
+                2012
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="google.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Full Stack developer</h2>
+            <p><strong>Responsibilites : </strong>Led the development of a customer portal, utilizing React on the front end and Node.js on the back end. Implemented user authentication and data encryption. Worked closely with the UX team to enhance user experience.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                2018
+              </button>
+              <p>TO</p>
+              <button
+                class="btn btn-color-2 project-btn" 
+              >
+                present
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="amazon.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fornt-End Developer</h2>
+            <p><strong>Responsibilites : </strong>Developed a fully functional e-commerce website using Shopify. Customized the theme, integrated payment gateways, and optimized the site for search engines. Increased online sales by 30% within the first quarter.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                2017
+              </button>
+              <p>TO</p>
+              <button
+                class="btn btn-color-2 project-btn" 
+              >
+                2018
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="microsoft.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Junior Web Developer (Intern)</h2>
+            <p><strong>Responsibilites : </strong>Assisted senior developers in building and maintaining web applications. Gained experience in debugging and troubleshooting code. Contributed to the development of a company blog using WordPress.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                2016
+              </button>
+              <p>TO</p>
+              <button
+                class="btn btn-color-2 project-btn" 
+              >
+                2017
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Hobbies</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src="travelling.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Travelling</h3>
+                  <p>Exploring new places and cultures is a source of inspiration for me.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="reading.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Reading</h3>
+                  <p>Books are my companions in both leisure and learning. </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="cricket.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cricket</h3>
+                  <p>Since childhood cricket is my favourite sport and love to play at anytime.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="dance.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dance</h3>
+                  <p>Absolutely love to dance in rain and as well as with loud music.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="hiking.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hiking</h3>
+                  <p>Connecting with nature is essential for me. Hiking, camping, and outdoor adventures provide a break</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:suraganigeetha@gmail.com">suraganigeetha@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Suragani Geetha. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
